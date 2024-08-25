@@ -1,0 +1,42 @@
+/* base.scss */
+@import 'variables';
+@import 'mixins';
+
+body {
+    font-family: $font-family;
+    margin: 0;
+    padding: 0;
+    background-color: $light-blue;
+
+    .container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 25px;
+        background-color: $white;
+        @include box-shadow;
+        border-radius: $border-radius;
+
+        form {
+            display: flex;
+            flex-direction: column;
+
+            label {
+                margin-bottom: 12px;
+                font-weight: bold;
+                color: $dark-blue;
+            }
+
+            input[type="text"] {
+                padding: 12px;
+                border: 1px solid $primary-blue;
+                border-radius: $border-radius;
+                margin-bottom: 20px;
+                font-size: 16px;
+            }
+
+            button {
+                @include button-style($primary-blue, $secondary-blue);
+            }
+        }
+    }
+}

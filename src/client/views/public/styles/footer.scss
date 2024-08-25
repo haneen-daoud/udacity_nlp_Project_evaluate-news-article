@@ -1,0 +1,32 @@
+/* footer.scss */
+@import 'variables';
+
+footer {
+    display: flex;
+    justify-content: center;  
+    align-items: center;  
+    height: 100vh;  
+    text-align: center;
+    padding: 20px;
+    border-top: 5px solid $primary-blue;
+    background-color: $dark-blue;
+    color: $white;
+
+    #results {
+        max-width: 600px;  
+        width: 80%;  
+        background-color: $light-blue;
+        border-radius: $border-radius;
+        padding: 20px;
+        box-shadow: $box-shadow;
+    }
+
+    a {
+        color: $primary-blue;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
